@@ -1,4 +1,10 @@
-/* Basic Reset */
+:root {
+    --primary-color: #007bff;
+    --text-color: #333;
+    --background-color: #f8f9fa;
+    --content-width: 1200px; /* Max width of the content */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,48 +12,62 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    background-image: url('texture.png'); /* Add your texture image URL here */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: var(--content-width);
+    padding: 1rem;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav .menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+header, section, footer {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+    max-width: var(--content-width);
+    padding: 2rem;
 }
 
 header {
-    background-color: hsl(0, 5%, 78%);
-    color: #fff;
-    padding: 20px;
     text-align: center;
-}
-
-header img {
-    max-width: 1000px;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
+    background-color: var(--primary-color);
     color: #fff;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
+
+/* Additional styles remain unchanged */

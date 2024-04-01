@@ -3,44 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyper 8</title>
+    <title>Hyper 8 Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="hyper8logo.png">
 </head>
 <body>
+    <nav>
+        <div class="nav-container"> <!-- Wrapper for content within nav to apply max-width -->
+            <div class="logo">
+                <img src="hyper8logo.png" alt="Hyper 8 Logo">
+            </div>
+            <div class="menu">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
     <header>
-        <img src="hyper8logo.png" alt="Hyper 8 Logo" id="logo" size="300">
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="content"> <!-- Content wrapper for header -->
+            <h1>Welcome to Hyper 8 Solutions</h1>
+            <p>Introducing the first wave of e-xperts</p>
+        </div>
     </header>
-    <main>
-        <section id="about">
-            <h1>Welcome to Hyper 8</h1>
-            <p>We're pioneering the future of digital innovation. Stay tuned for exciting updates.</p>
-        </section>
-        <section id="services">
+    <section id="about">
+        <div class="content"> <!-- Content wrapper for section -->
+            <h2>About Us</h2>
+            <p>We are at the forefront of the AI revolution, transforming ideas into reality, 
+                and boosting your business to the new age of automation.</p>
+        </div>
+    </section>
+    <section id="services">
+        <div class="content"> <!-- Content wrapper for section -->
             <h2>Our Services</h2>
-            <p>Details about the services we offer will be available soon.</p>
-        </section>
-        <section id="contact">
+            <p>Solutions tailored to your needs. Stay tuned for our e-xpert offerings.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="content"> <!-- Content wrapper for section -->
             <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+            <a href="mailto:nep2n0@gmail.com">Send Email</a>
+            </br>
+            <a href="https://t.me/elroge">Contact on Telegram</a>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2024 Hyper 8. All rights reserved.</p>
+        <div class="content"> <!-- Content wrapper for footer -->
+            <p>&copy; 2024 Hyper 8. All rights reserved.</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
